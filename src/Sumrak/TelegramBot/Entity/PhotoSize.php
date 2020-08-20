@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents one size of a photo or a file / sticker thumbnail.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PhotoSize implements EntityInterface
 {

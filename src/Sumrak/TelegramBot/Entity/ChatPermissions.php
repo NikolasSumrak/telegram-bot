@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Describes actions that a non-administrator user is allowed to take in a chat.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ChatPermissions implements EntityInterface
 {

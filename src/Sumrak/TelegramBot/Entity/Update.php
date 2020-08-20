@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Sumrak\TelegramBot\Entity;
 
+/**
+ * Class Update
+ * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
+ */
 class Update implements EntityInterface
 {
     /**

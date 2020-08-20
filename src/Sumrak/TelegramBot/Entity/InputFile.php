@@ -8,6 +8,7 @@ namespace Sumrak\TelegramBot\Entity;
  * usual way that files are uploaded via the browser.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputFile implements EntityInterface
 {

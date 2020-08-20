@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * 2019 for animated stickers. Older clients will ignore them.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultCachedSticker implements InlineQueryResultInterface
 {

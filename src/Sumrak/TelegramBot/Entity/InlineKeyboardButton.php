@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents one button of an inline keyboard. You must use exactly one of the optional fields.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineKeyboardButton implements EntityInterface
 {

@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * input_message_content to send a message with the specified content instead of the animation.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultCachedMpeg4Gif implements InlineQueryResultInterface
 {

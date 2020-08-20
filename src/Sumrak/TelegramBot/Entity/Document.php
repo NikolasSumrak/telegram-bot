@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a general file (as opposed to photos, voice messages and audio files).
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class Document implements EntityInterface
 {

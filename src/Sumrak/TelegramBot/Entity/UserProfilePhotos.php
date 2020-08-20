@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represent a user's profile pictures.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class UserProfilePhotos implements EntityInterface
 {

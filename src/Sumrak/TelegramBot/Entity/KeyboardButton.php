@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * after 23 January, 2020. Older clients will display unsupported message.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class KeyboardButton implements EntityInterface
 {

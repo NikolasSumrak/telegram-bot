@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Contains information about why a request was unsuccessful.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ResponseParameters implements EntityInterface
 {

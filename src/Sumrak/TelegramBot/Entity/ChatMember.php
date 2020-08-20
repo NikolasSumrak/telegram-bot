@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains information about one member of a chat.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ChatMember implements EntityInterface
 {

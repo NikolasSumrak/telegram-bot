@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents an animated emoji that displays a random value.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class Dice implements EntityInterface
 {

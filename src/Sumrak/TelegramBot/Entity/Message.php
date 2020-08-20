@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a message.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class Message implements EntityInterface
 {

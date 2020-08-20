@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a chat photo.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ChatPhoto implements EntityInterface
 {

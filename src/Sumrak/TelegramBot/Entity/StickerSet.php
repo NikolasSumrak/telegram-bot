@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a sticker set.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class StickerSet implements EntityInterface
 {

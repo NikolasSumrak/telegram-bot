@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains basic information about an invoice.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class Invoice implements EntityInterface
 {

@@ -12,6 +12,7 @@ namespace Sumrak\TelegramBot\Entity;
  * ReplyKeyboardMarkup).
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ReplyKeyboardRemove implements ReplyMarkupInterface
 {

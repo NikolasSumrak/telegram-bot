@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains information about an incoming pre-checkout query.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PreCheckoutQuery implements EntityInterface
 {

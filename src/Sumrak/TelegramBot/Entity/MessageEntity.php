@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents one special entity in a text message. For example, hashtags, usernames, URLs, etc.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class MessageEntity implements EntityInterface
 {

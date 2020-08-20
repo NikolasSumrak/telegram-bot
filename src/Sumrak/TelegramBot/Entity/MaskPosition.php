@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object describes the position on faces where a mask should be placed by default.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class MaskPosition implements EntityInterface
 {

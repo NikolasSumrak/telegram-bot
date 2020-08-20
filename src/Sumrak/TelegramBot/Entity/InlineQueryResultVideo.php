@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * the specified content instead of the video.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultVideo implements InlineQueryResultInterface
 {

@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains information about an incoming shipping query.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ShippingQuery implements EntityInterface
 {

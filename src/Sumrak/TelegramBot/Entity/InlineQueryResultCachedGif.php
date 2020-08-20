@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * specified content instead of the animation.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultCachedGif implements InlineQueryResultInterface
 {

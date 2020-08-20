@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents an answer of a user in a non-anonymous poll.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PollAnswer implements EntityInterface
 {

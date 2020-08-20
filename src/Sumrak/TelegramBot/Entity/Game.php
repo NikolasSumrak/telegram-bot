@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Sumrak\TelegramBot\Entity;
 
+/**
+ * Class Game
+ * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
+ */
 class Game implements EntityInterface
 {
     /**

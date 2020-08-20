@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a phone contact.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class Contact implements EntityInterface
 {

@@ -9,6 +9,8 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents an audio file to be treated as music by the Telegram clients.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
+ * @codeCoverageIgnore
  */
 class Audio implements EntityInterface
 {

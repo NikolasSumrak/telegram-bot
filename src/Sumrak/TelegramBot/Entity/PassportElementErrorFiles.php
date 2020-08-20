@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * scans changes.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PassportElementErrorFiles implements PassportElementErrorInterface
 {

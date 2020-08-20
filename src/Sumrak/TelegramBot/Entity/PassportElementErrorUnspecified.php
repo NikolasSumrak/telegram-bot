@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents an issue in an unspecified place. The error is considered resolved when new data is added.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PassportElementErrorUnspecified implements PassportElementErrorInterface
 {

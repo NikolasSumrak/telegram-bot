@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * default or trending results.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQuery implements EntityInterface
 {

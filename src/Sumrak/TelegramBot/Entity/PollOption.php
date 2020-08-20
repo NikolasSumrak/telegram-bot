@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains information about one answer option in a poll.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PollOption implements EntityInterface
 {

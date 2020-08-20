@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * hour. When the link expires, a new one can be requested by calling getFile.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class File implements EntityInterface
 {

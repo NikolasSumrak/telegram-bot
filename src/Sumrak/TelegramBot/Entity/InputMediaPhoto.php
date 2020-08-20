@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents a photo to be sent.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputMediaPhoto implements InputMediaInterface
 {

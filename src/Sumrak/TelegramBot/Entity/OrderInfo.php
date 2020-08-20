@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents information about an order.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class OrderInfo implements EntityInterface
 {

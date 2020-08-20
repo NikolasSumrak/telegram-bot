@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * you can use input_message_content to send a message with the specified content instead of the photo.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultPhoto implements InlineQueryResultInterface
 {

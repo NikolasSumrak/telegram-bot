@@ -141,4 +141,59 @@ class ApiAdapterTest extends TestCase
             $actual
         );
     }
+
+    /**
+     * @covers \Sumrak\TelegramBot\ApiAdapter::setBotToken
+     */
+    public function testSetBotToken()
+    {
+        $this->model->setBotToken('asdasdasd');
+        $resultValue = $this->getPropertyValue($this->model, 'token');
+
+        $this->assertSame('asdasdasd', $resultValue);
+    }
+
+    /**
+     * @covers \Sumrak\TelegramBot\ApiAdapter::setClient
+     */
+    public function testSetClient()
+    {
+        $clientMock = $this->createMock(HttpClientInterface::class);
+        $this->model->setClient($clientMock);
+        $resultValue = $this->getPropertyValue(
+            $this->model,
+            'client'
+        );
+
+        $this->assertSame($clientMock, $resultValue);
+    }
+
+    /**
+     * @covers \Sumrak\TelegramBot\ApiAdapter::setSerializer
+     */
+    public function testSetSerializer()
+    {
+        $serializerMock = $this->createMock(TelegramApiSerializerInterface::class);
+        $this->model->setSerializer($serializerMock);
+        $resultValue = $this->getPropertyValue(
+            $this->model,
+            'serializer'
+        );
+
+        $this->assertSame($serializerMock, $resultValue);
+    }
+
+    /**
+     * @param object $object
+     * @param string $propertyName
+     * @return mixed
+     */
+    private function getPropertyValue($object, $propertyName)
+    {
+        $reflectionClass = new \ReflectionClass(get_class($object));
+        $property = $reflectionClass->getProperty($propertyName);
+        $property->setAccessible(true);
+
+        return $property->getValue($object);
+    }
 }

@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents a link to an article or web page.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultArticle implements InlineQueryResultInterface
 {

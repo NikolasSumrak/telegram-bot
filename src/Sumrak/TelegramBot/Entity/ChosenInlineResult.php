@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Note: It is necessary to enable inline feedback via @Botfather in order to receive these objects in updates.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ChosenInlineResult implements EntityInterface
 {

@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents a general file to be sent.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputMediaDocument implements InputMediaInterface
 {

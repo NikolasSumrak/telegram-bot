@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents the content of a location message to be sent as the result of an inline query.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputLocationMessageContent implements InputMessageContentInterface
 {

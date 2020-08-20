@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * inline results if a game result is among them.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultGame implements InlineQueryResultInterface
 {

@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Note: This will only work in Telegram versions released after 9 April, 2016. Older clients will ignore them.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultLocation implements InlineQueryResultInterface
 {

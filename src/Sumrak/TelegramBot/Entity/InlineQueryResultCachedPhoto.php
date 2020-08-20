@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * instead of the photo.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultCachedPhoto implements InlineQueryResultInterface
 {

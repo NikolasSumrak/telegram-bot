@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents a video to be sent.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputMediaVideo implements InputMediaInterface
 {

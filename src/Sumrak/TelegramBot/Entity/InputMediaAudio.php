@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents an audio file to be treated as music to be sent.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputMediaAudio implements InputMediaInterface
 {

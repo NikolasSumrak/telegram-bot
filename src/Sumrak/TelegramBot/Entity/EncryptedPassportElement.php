@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Contains information about documents or other Telegram Passport elements shared with the bot by the user.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class EncryptedPassportElement implements EntityInterface
 {

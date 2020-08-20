@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents one shipping option.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ShippingOption implements EntityInterface
 {

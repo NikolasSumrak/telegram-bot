@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * user-friendly step-by-step interfaces without having to sacrifice privacy mode.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ForceReply implements ReplyMarkupInterface
 {

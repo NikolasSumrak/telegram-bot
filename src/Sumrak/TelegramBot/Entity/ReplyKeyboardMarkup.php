@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object represents a custom keyboard with reply options (see Introduction to bots for details and examples).
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class ReplyKeyboardMarkup implements ReplyMarkupInterface
 {

@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * message.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineKeyboardMarkup implements ReplyMarkupInterface
 {

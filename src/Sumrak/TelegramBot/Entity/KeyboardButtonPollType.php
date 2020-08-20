@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * pressed.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class KeyboardButtonPollType implements EntityInterface
 {

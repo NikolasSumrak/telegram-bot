@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * side of the document changes.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PassportElementErrorFrontSide implements PassportElementErrorInterface
 {

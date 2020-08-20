@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * the field's value changes.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PassportElementErrorDataField implements PassportElementErrorInterface
 {

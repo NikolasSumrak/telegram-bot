@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Documentation for a complete description of the data decryption and authentication processes.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class EncryptedCredentials implements EntityInterface
 {

@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Telegram apps support these buttons as of version 5.7.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class LoginUrl implements EntityInterface
 {

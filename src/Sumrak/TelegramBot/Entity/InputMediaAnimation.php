@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * Represents an animation file (GIF or H.264/MPEG-4 AVC video without sound) to be sent.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InputMediaAnimation implements InputMediaInterface
 {

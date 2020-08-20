@@ -19,7 +19,33 @@ use Sumrak\TelegramBot\TelegramBotContext;
 class TelegramBotContextTest extends TestCase
 {
     /**
-     * @covers \Sumrak\TelegramBot\TelegramBotContext::getApiAdapter
+     * @covers \Sumrak\TelegramBot\TelegramBotContext::__construct
+     */
+    public function testCreatingWithParams()
+    {
+        $apiAdapterMock = $this->createMock(ApiAdapterInterface::class);
+        $httpClientMock = $this->createMock(HttpClientInterface::class);
+        $serializerMock = $this->createMock(TelegramApiSerializerInterface::class);
+        $model = new TelegramBotContext(
+            'BOT_TOKEN',
+            $apiAdapterMock,
+            $httpClientMock,
+            $serializerMock
+        );
+        $this->assertSame('BOT_TOKEN', $model->getBotToken());
+    }
+
+    /**
+     * @covers \Sumrak\TelegramBot\TelegramBotContext::__construct
+     */
+    public function testCreating()
+    {
+        $model = new TelegramBotContext('BOT_TOKEN');
+        $this->assertSame('BOT_TOKEN', $model->getBotToken());
+    }
+
+    /**
+     * @covers \Sumrak\TelegramBot\TelegramBotContext::getBotToken
      */
     public function testGetBotToken()
     {

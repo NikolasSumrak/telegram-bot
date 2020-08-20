@@ -10,6 +10,7 @@ namespace Sumrak\TelegramBot\Entity;
  * when decrypted and don't exceed 10MB.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class PassportFile implements EntityInterface
 {

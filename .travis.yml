@@ -24,12 +24,11 @@ git:
 
 install:
   - travis_retry composer install --prefer-dist --no-interaction
-  - vendor/bin/phpunit --coverage-clover coverage.xml
 
 script:
-  - vendor/bin/phpunit
   - vendor/bin/phpstan analyse -l 5 src tests
   - vendor/bin/phpcs --standard=PSR12 ./src/
+  - vendor/bin/phpunit --coverage-clover coverage.xml
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

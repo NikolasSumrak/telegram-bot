@@ -9,6 +9,7 @@ namespace Sumrak\TelegramBot\Entity;
  * This object contains basic information about a successful payment.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class SuccessfulPayment implements EntityInterface
 {

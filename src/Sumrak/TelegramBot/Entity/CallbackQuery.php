@@ -12,6 +12,7 @@ namespace Sumrak\TelegramBot\Entity;
  * the fields data or game_short_name will be present.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class CallbackQuery implements EntityInterface
 {

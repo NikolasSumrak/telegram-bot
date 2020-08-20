@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * content instead of the video.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultCachedVideo implements InlineQueryResultInterface
 {

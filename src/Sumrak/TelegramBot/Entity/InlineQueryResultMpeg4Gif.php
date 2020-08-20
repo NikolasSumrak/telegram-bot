@@ -11,6 +11,7 @@ namespace Sumrak\TelegramBot\Entity;
  * with the specified content instead of the animation.
  *
  * @package Sumrak\TelegramBot\Entity
+ * @codeCoverageIgnore
  */
 class InlineQueryResultMpeg4Gif implements InlineQueryResultInterface
 {
