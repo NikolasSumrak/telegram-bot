@@ -1,0 +1,38 @@
+{
+  "name": "sumrak/telegram-bot",
+  "description": "PHP 7 Object-based Telegram Bot Library",
+  "type": "library",
+  "keywords": ["php", "telegram", "telegram bot"],
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Nikolas Sumrak",
+      "email": "nikolassumrak@gmail.com",
+      "homepage": "https://sumrak.name"
+    }
+  ],
+  "require": {
+    "php": "^7.2.0",
+    "guzzlehttp/guzzle": "~6.0",
+    "symfony/serializer": "*",
+    "symfony/property-access": "*",
+    "symfony/property-info": "*",
+    "phpdocumentor/reflection-docblock": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4",
+    "phpstan/phpstan": "^0.12.34",
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumrak\\TelegramBot\\": "src/Sumrak/TelegramBot"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sumrak\\TelegramBot\\Tests\\Unit\\": "tests/unit"
+    }
+  }
+}

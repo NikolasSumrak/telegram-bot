@@ -1,0 +1,35 @@
+language: php
+sudo: required
+dist: trusty
+
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
+php:
+  - 7.4
+  - 7.3
+  - 7.2
+
+matrix:
+  fast_finish: true
+
+notifications:
+  on_success: never
+  on_failure: always
+
+git:
+  depth: 1
+
+install:
+  - travis_retry composer install --prefer-dist --no-interaction
+  - vendor/bin/phpunit --coverage-clover coverage.xml
+
+script:
+  - vendor/bin/phpunit
+  - vendor/bin/phpstan analyse -l 5 src tests
+  - vendor/bin/phpcs --standard=PSR12 ./src/
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
