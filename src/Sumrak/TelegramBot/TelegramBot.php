@@ -13,6 +13,9 @@ use Sumrak\TelegramBot\Entity\ReplyMarkupInterface;
 
 class TelegramBot
 {
+    public const PARSE_MODE_HTML = 'HTML';
+    public const PARSE_MODE_MARKDOWN = 'Markdown';
+    public const PARSE_MODE_MARKDOWN_V2 = 'MarkdownV2';
 
     /**
      * @var ApiAdapterInterface
@@ -49,7 +52,7 @@ class TelegramBot
         ?int $timeout = null,
         ?array $allowedUpdates = null
     ): array {
-        if (!empty($replyMarkup)) {
+        if (!empty($allowedUpdates)) {
             // @TODO use serializer?
             $allowedUpdates = \json_encode($allowedUpdates);
         }

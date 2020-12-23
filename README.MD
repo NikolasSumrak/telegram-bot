@@ -14,11 +14,47 @@ $bot = new \Sumrak\TelegramBot\TelegramBot($botContext);
 
 ## Getting updates
 ```
-$bot->getUpdates();
+$updates = $bot->getUpdates();
+
+foreach ($updates as $update) {
+    echo $update->getUpdateId();
+    echo ": ";
+    if ($update->getMessage()) {
+        echo $update->getMessage()->getChat()->getId() . ' - ' . $update->getMessage()->getText();
+        $lastMessageId = $update->getMessage()->getMessageId();
+    } else {
+        echo 'Not Message Update';
+    }
+    echo PHP_EOL;
+}
 ```
 ## Get request in Webhook
 ```
 $input = file_get_contents('php://input');
 $serializer = new \Sumrak\TelegramBot\Serializer\TelegramApiSerializer();
-$updates = $this->serializer->unserialize(\Sumrak\TelegramBot\Entity\Update::class . '[]', $content);
+$updates = $serializer->unserialize(\Sumrak\TelegramBot\Entity\Update::class . '[]', $content);
+```
+
+### Sending Messages
+```
+$replyMarkup = new \Sumrak\TelegramBot\Entity\ReplyKeyboardMarkup();
+$button1 = new \Sumrak\TelegramBot\Entity\KeyboardButton();
+$button1->setText('Button1');
+
+$button2 = new \Sumrak\TelegramBot\Entity\KeyboardButton();
+$button2->setText('Button2');
+$replyMarkup->setKeyboard([[
+    $button1,
+    $button2
+]]);
+
+$bot->sendMessage(
+    218081419,
+    'Some Text',
+    \Sumrak\TelegramBot\TelegramBot::PARSE_MODE_MARKDOWN_V2,
+    null,
+    null,
+    $lastMessageId,
+    $replyMarkup
+);
 ```
