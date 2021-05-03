@@ -2,23 +2,44 @@
 
 namespace Sumrak\TelegramBot\Serializer\Normalizer;
 
-use Symfony\Component\Serializer\Normalizer\ArrayDenormalizer;
+use Symfony\Component\Serializer\Exception\InvalidArgumentException;
+use Symfony\Component\Serializer\Normalizer\ContextAwareDenormalizerInterface;
+use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
+use Symfony\Component\Serializer\SerializerAwareInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 
-class ResultNormalizer extends ArrayDenormalizer
+class ResultNormalizer implements ContextAwareDenormalizerInterface, SerializerAwareInterface
 {
+    /**
+     * @var SerializerInterface|DenormalizerInterface
+     */
+    private $serializer;
 
     /**
-     * @param array $data
-     * @param string $type
-     * @param string|null $format
-     * @param array $context
-     * @return array|mixed|object
+     * {@inheritdoc}
      */
     public function denormalize($data, string $type, string $format = null, array $context = [])
     {
-        if (!empty($data['ok']) && isset($data['result'])) {
-            $data = $data['result'];
+        return $this->serializer->denormalize($data['result'], $type, $format, $context);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function supportsDenormalization($data, string $type, string $format = null, array $context = []): bool
+    {
+        return !empty($data['ok']) && isset($data['result']);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setSerializer(SerializerInterface $serializer)
+    {
+        if (!$serializer instanceof DenormalizerInterface) {
+            throw new InvalidArgumentException('Expected a serializer that also implements DenormalizerInterface.');
         }
-        return parent::denormalize($data, $type, $format, $context);
+
+        $this->serializer = $serializer;
     }
 }
