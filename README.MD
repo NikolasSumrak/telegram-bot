@@ -6,14 +6,19 @@
 
 Based on objects (all data is objects).
 
-Usage:
+# Installation
 ```
+composer require sumrak/telegram-bot
+```
+
+# Usage:
+```php
 $botContext = new \Sumrak\TelegramBot\TelegramBotContext('your api token here');
 $bot = new \Sumrak\TelegramBot\TelegramBot($botContext);
 ```
 
 ## Getting updates
-```
+```php
 $updates = $bot->getUpdates();
 
 foreach ($updates as $update) {
@@ -29,14 +34,14 @@ foreach ($updates as $update) {
 }
 ```
 ## Get request in Webhook
-```
-$input = file_get_contents('php://input');
+```php
+$content = file_get_contents('php://input');
 $serializer = new \Sumrak\TelegramBot\Serializer\TelegramApiSerializer();
-$updates = $serializer->unserialize(\Sumrak\TelegramBot\Entity\Update::class . '[]', $content);
+$update = $serializer->deserialize(\Sumrak\TelegramBot\Entity\Update::class, $content);
 ```
 
 ### Sending Messages
-```
+```php
 $replyMarkup = new \Sumrak\TelegramBot\Entity\ReplyKeyboardMarkup();
 $button1 = new \Sumrak\TelegramBot\Entity\KeyboardButton();
 $button1->setText('Button1');
