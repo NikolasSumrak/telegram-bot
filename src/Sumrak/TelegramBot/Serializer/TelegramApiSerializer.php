@@ -49,6 +49,7 @@ class TelegramApiSerializer implements TelegramApiSerializerInterface
             $extractor = new PropertyInfoExtractor([], [new PhpDocExtractor(), new ReflectionExtractor()]);
             $normalizers = [
                 new ResultNormalizer(),
+                new \Symfony\Component\Serializer\Normalizer\ArrayDenormalizer(),
                 new CustomObjectNormalizer(
                     null,
                     new CamelCaseToSnakeCaseNameConverter(),
